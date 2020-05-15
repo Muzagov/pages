@@ -1,0 +1,21 @@
+<div class="cont5 d-flex">
+  <div class="container">
+    <div class="up"><h2>Upcoming Events</h2></div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let database of database2">
+        <div class="url">
+          <img src="{{ database.url }}" class="image" />
+        </div>
+        <div class="title text-warning">
+          <b>{{ database.title }}</b>
+        </div>
+        <div class="text">
+          <b>{{ database.text }}</b>
+        </div>
+        <div class="read">
+          <b>{{ database.read }}</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

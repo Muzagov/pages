@@ -1,0 +1,23 @@
+<div class="cont3 d-flex">
+  <div class="container">
+    <div class="new"><h2>New Blog Posts</h2></div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let database of database">
+        <div class="url">
+          <img src="{{ database.url }}" class="image" />
+        </div>
+        <div class="title">
+          <b
+            ><a href="#">{{ database.title }}</a></b
+          >
+        </div>
+        <div class="text">
+          <b>{{ database.text }}</b>
+        </div>
+        <div class="read">
+          <b>{{ database.read }}</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="cont2 d-flex" *ngFor="let item of Items()">
+  <div class="url">
+    <img src="{{ item.url }}" class="image" />
+  </div>
+  <div class="cont-2">
+    <div class="text-1 text-danger">
+      <b>{{ item.title }}</b>
+    </div>
+    <div class="text-2">
+      <b>{{ item.text }}</b>
+    </div>
+    <div class="text-3">
+      <b>{{ item.read }}</b>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="cont4">
+  <div class="container">
+    <div class="popular"><h2>Popular Resources</h2></div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="cont-4" *ngFor="let database of database1">
+          <div class="url">
+            <img src="{{ database.url }}" class="image" />
+          </div>
+          <div class="text-1">
+            <div class="title text-danger">
+              <b>{{ database.title }}</b>
+            </div>
+            <div class="text">
+              <b>{{ database.text }}</b>
+            </div>
+            <div class="read">
+              <b>{{ database.read }}</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="url">
+          <img src="https://via.placeholder.com/500x480?text=Visit" class="images" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
